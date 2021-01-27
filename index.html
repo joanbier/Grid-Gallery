@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/84be6eaea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="grid">
+        <section class="logo"><img class="logo-img" src="images/logo.png" alt=""></section>
+        <section class="search">
+            <div class="form-group fg--search">
+                <input type="text" class="input" placeholder="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </section>
+        <nav class="menu">
+            <div onclick="dropMenu()" class="mobile-bars"><i class="fas fa-bars"></i></div>
+            <div class="container">
+                <div class="link text">
+                    Home</div>
+                <div class="link text">
+                    Projects</div>
+                <div class="link text">
+                    Art</div>
+                <div class="link text">
+                    Social</div>
+                <div class="link text">
+                    Setup</div>
+                <div class="link text">
+                    Help</div>
+            </div>
+        </nav>
+
+        <section class="gallery">
+            <h1>Gallery</h1>
+            <img src="http://placeimg.com/640/480/1" alt="">
+            <img src="http://placeimg.com/640/480/2" alt="">
+            <img src="http://placeimg.com/640/480/3" alt="">
+            <img src="http://placeimg.com/640/480/4" alt="">
+            <img src="http://placeimg.com/640/480/5" alt="">
+            <img src="http://placeimg.com/640/480/6" alt="">
+            <img src="http://placeimg.com/640/480/7" alt="">
+            <img src="http://placeimg.com/640/480/8" alt="">
+            <img src="http://placeimg.com/640/480/9" alt="">
+            <img src="http://placeimg.com/640/480/10" alt="">
+            <img src="http://placeimg.com/640/480/11" alt="">
+            <img src="http://placeimg.com/640/480/12" alt="">
+            <img src="http://placeimg.com/640/480/13" alt="">
+            <img src="http://placeimg.com/640/480/14" alt="">
+            <img src="http://placeimg.com/640/480/15" alt="">
+            <img src="http://placeimg.com/640/480/16" alt="">
+            <img src="http://placeimg.com/640/480/17" alt="">
+            <img src="http://placeimg.com/640/480/18" alt="">
+            <img src="http://placeimg.com/640/480/19" alt="">
+            <img src="http://placeimg.com/640/480/20" alt="">
+            <img src="http://placeimg.com/640/480/21" alt="">
+            <img src="http://placeimg.com/640/480/22" alt="">
+        </section>
+
+        <section class="contact">
+            <form action="">
+                <p> Contact Me</p>
+                <fieldset class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                </fieldset>
+                <button type="button" class="btn btn-dark btn-sm">Send</button>
+            </form>
+        </section>
+        <footer class="footer footer-basic">
+            <div class="social"><a href="#"><i class="icon fab fa-instagram"></i></a><a href="#"><i
+                        class="icon fab fa-snapchat"></i></a><a href="#"><i class="icon fab fa-twitter"></i></a><a
+                    href="#"><i class="icon fab fa-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+
+    </div>
+    <script>
+        //For Demo only
+        var links = document.getElementsByClassName("link");
+        for (var i = 0; i <= links.length; i++) addClass(i);
+
+        function addClass(id) {
+            setTimeout(function () {
+                if (id > 0) links[id - 1].classList.remove("hover");
+                links[id].classList.add("hover");
+            }, id * 750);
+        }
+
+        function dropMenu() {
+            document.querySelector(".container").classList.toggle("show")
+        }
+    </script>
+</body>
+
+</html>
